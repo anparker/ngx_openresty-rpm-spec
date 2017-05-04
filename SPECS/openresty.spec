@@ -1,5 +1,5 @@
 Name:		openresty
-Version:	1.9.7.5
+Version:	1.11.2.3
 Release:	1%{?dist}
 Summary:	a fast web app server by extending nginx
 Distribution: CentOS 7
@@ -17,6 +17,8 @@ Requires(pre):	shadow-utils
 
 %define user nginx
 %define homedir /opt/openresty
+
+%define _unpackaged_files_terminate_build 0
 
 %description
 OpenResty is a full-fledged web application server by bundling the standard Nginx core,
@@ -56,7 +58,6 @@ sha1-asm
 libatomic
 pcre-jit
 luajit
-lua51
 ipv6
 http_v2_module
 
@@ -97,7 +98,6 @@ http_v2_module
 --with-libatomic \
 --with-pcre-jit \
 --with-luajit \
---with-lua51
 --with-ipv6 \
 --with-http_v2_module
 

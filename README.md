@@ -45,7 +45,8 @@ The following **NGINX** modules are enabled with this package:
 - libatomic 
 - pcre-jit
 - luajit
-- lua51
+- ipv6
+- http_v2_module
 
 USING THE BUILD & INSTALL SCRIPT
 --------------------------------
@@ -93,7 +94,7 @@ Third, copy or download source files into correct folders:
 
 	cp ./SOURCES/openresty.service ./rpmbuild/SOURCES/
 	cp ./SPECS/openresty.spec ./rpmbuild/SPECS/
-	curl -o ./rpmbuild/SOURCES/openresty-1.9.7.5.tar.gz  https://openresty.org/download/openresty-1.9.7.5.tar.gz
+	curl -o ./rpmbuild/SOURCES/openresty-1.11.2.3.tar.gz  https://openresty.org/download/openresty-1.11.2.3.tar.gz
 
 Finally, build the RPM:
 
@@ -107,7 +108,7 @@ INSTALLATING THE RPM
 
 To install the resulting RPM and all the RPM dependencies:
 
-	yum -y install ./rpmbuild/RPMS/x86_64/openresty-1.9.7.5-1.el7.centos.x86_64.rpm
+	yum -y install ./rpmbuild/RPMS/x86_64/openresty-1.11.2.3-1.el7.centos.x86_64.rpm
 
 
 STARTING THE SERVICE
