@@ -57,6 +57,8 @@ libatomic
 pcre-jit
 luajit
 lua51
+ipv6
+http_v2_module
 
 %prep
 %setup -q
@@ -96,6 +98,8 @@ lua51
 --with-pcre-jit \
 --with-luajit \
 --with-lua51
+--with-ipv6 \
+--with-http_v2_module
 
 make %{?_smp_mflags}
 
