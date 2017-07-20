@@ -1,5 +1,5 @@
 Name:		openresty
-Version:	1.11.2.3
+Version:	1.11.2.4
 Release:	1%{?dist}
 Summary:	a fast web app server by extending nginx
 Distribution: CentOS 7
