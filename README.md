@@ -94,7 +94,7 @@ Third, copy or download source files into correct folders:
 
 	cp ./SOURCES/openresty.service ./rpmbuild/SOURCES/
 	cp ./SPECS/openresty.spec ./rpmbuild/SPECS/
-	curl -o ./rpmbuild/SOURCES/openresty-1.11.2.4.tar.gz  https://openresty.org/download/openresty-1.11.2.4.tar.gz
+	curl -o ./rpmbuild/SOURCES/openresty-1.13.6.1.tar.gz  https://openresty.org/download/openresty-1.13.6.1.tar.gz
 
 Finally, build the RPM:
 
@@ -108,7 +108,7 @@ INSTALLATING THE RPM
 
 To install the resulting RPM and all the RPM dependencies:
 
-	yum -y install ./rpmbuild/RPMS/x86_64/openresty-1.11.2.4-1.el7.centos.x86_64.rpm
+	yum -y install ./rpmbuild/RPMS/x86_64/openresty-1.13.6.1-1.el7.centos.x86_64.rpm
 
 
 STARTING THE SERVICE

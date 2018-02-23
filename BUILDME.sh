@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 HERE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-VERSION=1.11.2.4
+VERSION=1.13.6.1
 RELEASE=1
 USER=$(whoami)
 SUDO=""
